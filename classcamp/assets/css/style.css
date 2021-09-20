@@ -1,0 +1,811 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  background-color: #100e14;
+  color: #fff;
+  font-family: Roboto;
+}
+
+body button {
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-header .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.site-main .shoot .container, .site-main .enrich .container, .site-main .add .container, .site-main .share .container, .site-main .trust .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 130px;
+  padding: 0 5%;
+}
+
+.site-main .shoot-texts, .site-main .enrich-texts, .site-main .add-texts, .site-main .share-texts {
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+
+.site-main .shoot-texts--intro, .site-main .enrich-texts--intro, .site-main .add-texts--intro, .site-main .share-texts--intro {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.site-main .shoot-texts--slogan, .site-main .enrich-texts--slogan, .site-main .add-texts--slogan, .site-main .share-texts--slogan {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffffb2;
+}
+
+.site-main .enrich-texts--slogan--link, .site-main .add-texts--slogan--link, .site-main .share-texts--slogan--link {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.site-main .shoot-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.site-main .shoot-image--picture--first {
+  width: 45%;
+  position: absolute;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.site-main .shoot-image--picture--second {
+  width: 80%;
+}
+
+.main-header .container .mtereshyn-logo--link {
+  text-decoration: none;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+}
+
+.site-main .site-slogan .container {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.site-main .site-slogan .container .site-slogan--texts__intro {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 73px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.site-main .site-slogan .container .site-slogan--texts__slogan {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #ffffffb2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.site-main .site-slogan .container .site-slogan--texts__button, .site-main .will-block--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 15px 30px 20px;
+  background-color: #ff4343;
+  border: #ff4343;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.site-main .site-slogan .container .site-slogan--texts__button--text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.site-main .site-slogan .container .site-slogan--texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.site-main .site-slogan--wrapper--images {
+  background-image: url(../images/site-slogan.png);
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 50px;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.site-main .shoot, .site-main .enrich, .site-main .add, .site-main .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.site-main .enrich-image--picture, .site-main .add-image--picture, .site-main .share-image--picture {
+  width: 100%;
+}
+
+.site-main .trust {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 140px 0;
+}
+
+.site-main .trust-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+  padding: 0 5%;
+}
+
+.site-main .trust-texts--intro {
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.site-main .trust-texts--slogan {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffffb2;
+}
+
+.site-main .trust-texts--hr {
+  height: 5px;
+  width: 120px;
+  background-color: #ff4343;
+  border: #ff4343;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+
+.main-header .container .mtereshyn-logo {
+  font-style: italic;
+  color: #100e14;
+}
+
+.site-main .site-slogan {
+  background-color: #100e14;
+}
+
+.site-main .site-slogan--wrapper {
+  padding: 0 10%;
+}
+
+.site-main .site-slogan--wrapper--images img {
+  width: 25%;
+  height: 20%;
+}
+
+.site-main .trust__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.site-main .trust__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  padding: 250px 35px 50px;
+  width: 171px;
+  height: 420px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31.25%, rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.25%, #000000 100%);
+}
+
+.site-main .trust__list__item--intro {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.site-main .trust__list__item--name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.site-main .trust__list__item--prof {
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffffb2;
+  text-align: center;
+}
+
+.site-main .trust__list__item--first {
+  background: url(../images/first-trust.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.site-main .trust__list__item--second {
+  background-image: url(../images/second-trust.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.site-main .trust__list__item--third {
+  background-image: url(../images/third-trust.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.site-main .trust__list__item--foth {
+  background-image: url(../images/foth-trust.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.site-main .trust__list__item--fifth {
+  background-image: url(../images/fifth-trust.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.site-main .offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.site-main .offer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+  padding: 0 5%;
+}
+
+.site-main .offer-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 0 5%;
+}
+
+.site-main .offer-texts--courses {
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #8bffb0;
+}
+
+.site-main .offer-texts--intro {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+}
+
+.site-main .offer-texts--slogan {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #ffffff80;
+  text-align: center;
+}
+
+.site-main .offer-image--picture {
+  width: 100%;
+}
+
+.site-main .will {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.site-main .will .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5%;
+}
+
+.site-main .will-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  border-radius: 30px;
+  background-color: #1d1b24;
+  max-width: 1120px;
+  padding: 15%;
+}
+
+.site-main .will-block--intro {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+}
+
+.site-main .will-block--slogan {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  color: #ffffffb2;
+  text-align: center;
+  padding: 0 17%;
+}
+
+.site-main .courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 170px 0;
+}
+
+.site-main .courses .container {
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 70px;
+}
+
+.site-main .courses--intro {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.site-main .courses__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+
+.site-main .courses__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.site-main .courses__list__item--picture {
+  max-width: 246px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.site-main .courses__list__item--picture--image {
+  width: 100%;
+}
+
+.site-main .courses__list__item--block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  background-color: #8ceaaa;
+  max-width: 370px;
+}
+
+.site-main .courses__list__item--block--start {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #95fec1;
+  margin-bottom: 15px;
+}
+
+.site-main .courses__list__item--block--intro {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.site-main .courses__list__item--block--slogan {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.site-main .courses__list__item--block--button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: inherit;
+  border: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.main-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5%;
+}
+
+.main-footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+}
+
+.main-footer-nav--lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+.main-footer-nav--lists__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+.main-footer-nav--lists__list__item--general {
+  margin-bottom: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-footer-nav--lists__list__item--link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer-nav--social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-footer-nav--social__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .site-main .courses__list__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .site-main .courses__list__item--picture {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .site-main .courses__list__item--block {
+    height: 410px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-main .shoot .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+  .site-main .shoot-texts {
+    padding: 0;
+    width: 50%;
+  }
+  .site-main .enrich .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+  .site-main .enrich-texts {
+    width: 50%;
+  }
+  .site-main .add .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+  .site-main .add-texts {
+    padding: 0;
+    width: 50%;
+  }
+  .site-main .share .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 50px;
+  }
+  .site-main .share-texts {
+    padding: 0;
+    width: 50%;
+  }
+  .site-main .trust .container {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .site-main .trust__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  .site-main .courses__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-footer .container {
+    padding: 0 2%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 130px;
+  }
+  .main-footer-nav--lists {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 150px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -48,6 +48,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   border-top: 20px solid #316099;
+  background-color: #98c3e8;
   margin-bottom: 100px;
 }
 
@@ -105,6 +106,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 30px;
 }
 
 .main-header-nav__list {
@@ -141,7 +143,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main .tool {
-  margin-bottom: 100px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #98c3e8), color-stop(31.12%, rgba(152, 195, 232, 0)));
   background: linear-gradient(0deg, #98c3e8 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
@@ -215,6 +216,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8.84%, #98c3e8), color-stop(31.12%, rgba(152, 195, 232, 0)));
+  background: linear-gradient(180deg, #98c3e8 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
 .main .about-us .container {
@@ -245,6 +248,14 @@ input[type="radio"].visually-hidden {
   color: #316099;
   line-height: 46px;
   font-weight: 300;
+}
+
+.main .about-us--first__block {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main .about-us--first__block--item {
@@ -523,5 +534,52 @@ input[type="radio"].visually-hidden {
 .main .projects__list__item img {
   max-width: 422px;
   width: 100%;
+}
+
+.main-footer {
+  padding: 30px;
+  background-color: #98c3e8;
+  border-radius: 0 75px 0px 0px;
+  border-bottom: 20px solid #1f3f68;
+}
+
+.main-footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .main .tool .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 50px;
+  }
+  .main .about-us .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main .about-us--first {
+    width: 49%;
+  }
+  .main .projects__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 /*# sourceMappingURL=style.css.map */

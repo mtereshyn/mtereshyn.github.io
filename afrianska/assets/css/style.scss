@@ -50,7 +50,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   display: flex;
   border-top: 20px solid #316099;
-
+  background-color: #98c3e8;
   margin-bottom: 100px;
   .container {
     display: flex;
@@ -58,6 +58,7 @@ input[type="radio"].visually-hidden {
   }
 
   &--block {
+    
     padding: 20px 0;
 
     display: flex;
@@ -94,6 +95,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-bottom: 30px;
     &__list {
       width: 100%;
 
@@ -125,7 +128,7 @@ input[type="radio"].visually-hidden {
 
 .main {
   .tool {
-    margin-bottom: 100px;
+
 
     background: linear-gradient(
       0deg,
@@ -189,6 +192,13 @@ input[type="radio"].visually-hidden {
     display: flex;
 
     margin-bottom: 100px;
+
+    background: linear-gradient(
+      180deg,
+      #98c3e8 8.84%,
+      rgba(152, 195, 232, 0) 31.12%
+    );
+
     .container {
       display: flex;
       flex-direction: column;
@@ -209,6 +219,9 @@ input[type="radio"].visually-hidden {
       }
 
       &__block {
+        align-self: center;
+        display: flex;
+        
         &--item {
           max-width: 380px;
           max-height: 600px;
@@ -268,7 +281,7 @@ input[type="radio"].visually-hidden {
     &--second {
       &__list {
         list-style: none;
-          
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -328,13 +341,12 @@ input[type="radio"].visually-hidden {
           }
         }
       }
-
     }
   }
 
   .projects {
     display: flex;
-    
+
     margin-bottom: 200px;
 
     .container {
@@ -409,8 +421,6 @@ input[type="radio"].visually-hidden {
       align-items: center;
       gap: 70px;
 
-
-
       &__item {
         display: flex;
         flex-direction: column;
@@ -433,7 +443,51 @@ input[type="radio"].visually-hidden {
           width: 100%;
         }
       }
-
     }
+  }
+}
+
+.main-footer {
+  padding: 30px;
+
+  background-color: #98c3e8;
+  border-radius: 0 75px 0px 0px;
+  border-bottom: 20px solid #1f3f68;
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+@media(min-width: 1024px) {
+  .main {
+    .tool {
+      .container {
+        flex-direction: row;
+
+        padding-bottom: 50px;
+      }
+    }
+  
+    .about-us {
+      .container {
+        flex-direction: row;
+      }
+
+      &--first {
+        width: 49%;
+      }
+    }
+
+    .projects {
+      &__list {
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
+    
   }
 }

@@ -565,6 +565,15 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 1024px) {
+  .main-header-nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .main .tool .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

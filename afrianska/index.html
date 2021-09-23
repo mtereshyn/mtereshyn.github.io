@@ -14,16 +14,21 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="main-header-logo">
-        <a href="./index.html" class="main-header-logo--link">
-        <img src="./assets/images/header-logo.svg" alt=""></a>
+      <div class="main-header--block">
+        <div class="main-header--block__logo">
+          <a href="./index.html" class="main-header-logo--link">
+          <img src="./assets/images/header-logo.svg" alt=""></a>
+        </div>
+        <div class="main-header--block__create">
+          <a href="../index.html" class="main-header--block__create--link"><span>by </span>mtereshyn</a>
+        </div>
+        <div class="main-header--block--toggle">
+          <span class="main-header--block--toggle-bar"></span><span
+            class="main-header--block--toggle-bar"></span><span class="main-header--block--toggle-bar"></span>
+        </div>
       </div>
-      <div class="main-header-hamburger">
-        <img src="./assets/images/hamburger-logo.svg" alt="">
-      </div>
-      <nav class="main-header-nav">
+      <nav class="main-header-nav main-header-nav--nojs main-header-nav--closed" id="navbar">
         <ul class="main-header-nav__list">
-          <li class="main-header-nav__list__item"><a href="" class="main-header-nav__list__item--link"><span>by</span> mtereshyn</a></li>
           <li class="main-header-nav__list__item"><a href="" class="main-header-nav__list__item--link">Intro</a></li>
           <li class="main-header-nav__list__item"><a href="" class="main-header-nav__list__item--link">About us</a></li>
           <li class="main-header-nav__list__item"><a href="" class="main-header-nav__list__item--link">Projects</a></li>
@@ -33,6 +38,28 @@
       </nav>
     </div>
   </header>
+  <main class="main">
+    <section class="tool">
+      <div class="container">
+        <div class="tool-texts">
+          <h2 class="tool-texts__intro">
+            New Automation <br>
+            Tool for Your Home
+          </h2>
+          <p class="tool-texts__slogan">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+          </p>
+          <button class="tool-texts__button">
+            See Our Project
+          </button>
+        </div>
+        <div class="tool--image">
+          <img src="./assets/images/first-main-image.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

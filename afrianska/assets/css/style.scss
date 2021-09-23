@@ -58,7 +58,6 @@ input[type="radio"].visually-hidden {
   }
 
   &--block {
-    
     padding: 20px 0;
 
     display: flex;
@@ -66,6 +65,9 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin-bottom: 15px;
     &__create {
+      &--link:hover {
+        color: #1f3f68;
+      }
       &--link {
         color: #316099;
         font-size: 16px;
@@ -113,6 +115,9 @@ input[type="radio"].visually-hidden {
           line-height: 20px;
           font-weight: 500;
         }
+        &--link:hover {
+          color: #5a98d0;
+        }
       }
     }
 
@@ -128,8 +133,6 @@ input[type="radio"].visually-hidden {
 
 .main {
   .tool {
-
-
     background: linear-gradient(
       0deg,
       #98c3e8 8.84%,
@@ -223,7 +226,7 @@ input[type="radio"].visually-hidden {
       &__block {
         align-self: center;
         display: flex;
-        
+
         &--item {
           max-width: 380px;
           max-height: 600px;
@@ -463,8 +466,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .main {
     .tool {
       .container {
@@ -473,7 +475,7 @@ input[type="radio"].visually-hidden {
         padding-bottom: 50px;
       }
     }
-  
+
     .about-us {
       .container {
         flex-direction: row;
@@ -490,6 +492,5 @@ input[type="radio"].visually-hidden {
         flex-direction: row;
       }
     }
-    
   }
 }

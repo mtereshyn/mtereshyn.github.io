@@ -11,98 +11,338 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/normalize.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css.map">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header main-header--mobile">
     <div class="container">
-      <nav class="main-nav">
-        <div class="main-logo">
-          <a href="./index.html" class="main-logo--link">mtereshyn</a>
+      <div class="main-header--wrapper">
+        <div class="main-header--wrapper__logo">
+          <a href="./index.html">
+            <img src="./assets/images/main-header--logo.svg" alt="">
+          </a>
         </div>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="https://www.instagram.com/mtereshyn/?hl=ru" class="nav__link">Instagram</a>
+        <div class="main-header--wrapper__toggle">
+          <img src="./assets/images/hamb-icon.svg" alt="">
+        </div>
+      </div>
+      <nav class="main-header-nav main-header-nav--nojs main-header-nav--closed main-header-nav--mobile">
+        <ul class="main-header-nav__list">
+          <li class="main-header-nav__list__item">
+            <a href="https://t.me/mtereshyn" class="main-header-nav__list__item--link">
+              Telegram
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="https://www.linkedin.com/in/maksym-tereshyn-b50a051b9/" class="nav__link">LinkedIn</a>
+          <li class="main-header-nav__list__item">
+            <a href="https://github.com/mtereshyn" class="main-header-nav__list__item--link">
+              GitHub
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="https://github.com/mtereshyn" class="nav__link">GitHub</a>
+          <li class="main-header-nav__list__item">
+            <a href="https://www.linkedin.com/in/maksym-tereshyn-b50a051b9/" class="main-header-nav__list__item--link">
+              LinkedIn
+            </a>
           </li>
+          <li class="main-header-nav__list__item">
+            <a href="https://www.instagram.com/mtereshyn/?hl=ru" class="main-header-nav__list__item--link">
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="main-header-nav--desktop">
+        <div class="main-header--wrapper__logo">
+          <a href="./index.html">
+            <img src="./assets/images/main-header--logo.svg" alt="">
+          </a>
+        </div>
+        <ul class="main-header-nav--desktop__list">
+          <li class="main-header-nav--desktop__list__item"><a href=""><img src="./assets/images/github-icon.svg"
+                alt=""></a></li>
+          <li class="main-header-nav--desktop__list__item"><a href=""><img src="./assets/images/telegram-icon.svg"
+                alt=""></a></li>
+          <li class="main-header-nav--desktop__list__item"><a href=""><img src="./assets/images/linkedin-icon.svg"
+                alt=""></a></li>
+          <li class="main-header-nav--desktop__list__item"><a href=""><img src="./assets/images/instagram-icon.svg"
+                alt=""></a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="site-main">
-    <div class="landing__list container">
-      <div class="landing__image">
-        <a href="./john/index.html" class="landing__link">
-        <img src="./assets/images/john.png" alt=""></a>
-      </div>
-      <div class="landing__image">
-        <a href="./afrianska/index.html" class="landing__link">
-        <img src="./assets/images/afrianska.png" alt=""></a>
-      </div>
-      <div class="landing__image">
-        <a href="./space/index.html" class="landing__link">
-          <img src="./assets/images/cut-space.png" alt="" />
-        </a>
-      </div>
-      <div class="landing__image">
-        <a href="./human/index.html" class="landing__link">
-          <img src="./assets/images/human-kind.png" alt="" />
-        </a>
-      </div>
+  <main class="main">
 
-      <div class="landing__image">
-        <a href="./landie/index.html" class="landing__link">
-          <img src="./assets/images/landie.png" alt="" />
-        </a>
-      </div>
-      <div class="landing__image">
-        <a href="./barbershop/index.html" class="landing__link">
-          <img src="./assets/images/barbershop.png" alt="" />
-        </a>
-      </div>
-      <div class="landing__image">
-        <a href="./doo/index.html" class="landing__link"><img src="./assets/images/doo-image.png" alt="" /></a>
-      </div>
+    <h1 class="main__intro">
+      Hello, welcome to my portfolio
+    </h1>
+    <div class="main--wrapper">
+      <section class="about">
+        <div class="container">
+          <div class="about--wrapper">
+            <div class="about--wrapper__image">
+              <img src="./assets/images/section-me.jpg" alt="">
+            </div>
+            <h2 class="about--wrapper__intro">
+              About me
+            </h2>
+            <p class="about--wrapper__slogan">
+              Hi, I'm Maksym <br> <br>
+              I am 20 years old and I am a future computer engineer.
+            </p>
+            <p class="about--wrapper__slogan">
+              At this stage I am engaged in websites and in the future I want to become a fullstack developer.
+            </p>
+            <a class="about--wrapper__button" href="./assets/images/Maksym Tereshyn CV.docx" download="">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="experience">
+        <div class="container">
+          <div class="experience--wrapper">
+            <h2 class="experience--wrapper__intro">
+              My experience
+            </h2>
+            <div class="experience--wrapper__block">
+              <div class="experience--wrapper__block--image">
+                <img src="./assets/images/unit-factory-icon.png" alt="">
+              </div>
+              <h2 class="experience--wrapper__block--intro">
+                Unit Factory
+              </h2>
+              <p class="experience--wrapper__block--slogan">
+                (from November to December 2019)
+              </p>
+              <p class="experience--wrapper__block--story">
+                It was a 28-day marathon. <br> <br>
+                I was learning the C programming language. During the last week of the marathon, we were writing a game
+                using the Ncurses graphics library. <br> <br>
+                I have gained a lot of experience in programming and teamwork. <br> <br>
+                I was engaged in the game interface, as well as in the development of the code.
+              </p>
 
-      <div class="landing__image">
-        <a href="./git-pod/index.html" class="landing__link">
-          <img src="./assets/images/git-pod.png" alt=""></a>
-      </div>
-
-      <div class="landing__image">
-        <a href="./manual/index.html" class="landing__link">
-          <img src="./assets/images/manual.png" alt="" />
-        </a>
-      </div>
-      <div class="landing__image"><a href="./classcamp/index.html" class="landing__link"><img
-            src="./assets/images/classcamp.png" alt=""></a></div>
+              <a href="../ucode/Marathon-C.zip" class="experience--wrapper__block--download" download="">
+                Marathon code
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </main>
-  <footer class="main-header">
-    <nav class="main-nav container">
-      <div class="main-logo">
-        <a href="./index.html" class="main-logo--link">mtereshyn</a>
+    <section class="projects">
+      <div class="container">
+        <div class="projects--wrapper">
+          <h2 class="projects--wrapper__intro">
+            My projects
+          </h2>
+          <div class="projects--wrapper__slider">
+            <a onclick="previousSlide()" class="projects--wrapper__slider--previos">
+              <img src="./assets/images/arrow.svg" alt="">
+            </a>
+            <div class="projects--wrapper__slider--item">
+              <a href="./john/index.html">
+                <img src="./assets/images/john.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./barbershop/index.html">
+                <img src="./assets/images/barbershop.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./classcamp/index.html">
+                <img src="./assets/images/classcamp.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./human/index.html">
+                <img src="./assets/images/human-kind.png" alt=""></a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./landie/index.html">
+                <img src="./assets/images/landie.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./afrianska/index.html">
+                <img src="./assets/images/afrianska.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./doo/index.html">
+                <img src="./assets/images/doo-image.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./git-pod/index.html">
+                <img src="./assets/images/git-pod.png" alt="">
+              </a>
+            </div>
+            <div class="projects--wrapper__slider--item">
+              <a href="./space/index.html">
+                <img src="./assets/images/cut-space.png" alt="">
+              </a>
+            </div>
+            
+            <a onclick="nextSlide()" class="projects--wrapper__slider--next">
+            <img src="./assets/images/arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
       </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="https://www.instagram.com/mtereshyn/?hl=ru" class="nav__link">Instagram</a>
-        </li>
-        <li class="nav__item">
-          <a href="https://www.linkedin.com/in/maksym-tereshyn-b50a051b9/" class="nav__link">LinkedIn</a>
-        </li>
-        <li class="nav__item">
-          <a href="https://github.com/mtereshyn" class="nav__link">GitHub</a>
-        </li>
+    </section>
+    <section class="know">
+      <div class="container">
+        <div class="know--wrapper">
+          <h2 class="know--wrapper__intro">
+            My knowledge
+          </h2>
+          <ul class="know--wrapper__list">
+            <li class="know--wrapper__list__item">
+              <div class="know--wrapper__list__item--prof">
+                <img src="./assets/images/html-icon.svg" alt="">
+              </div>
+              <ul class="know--wrapper__list__item--rate__list">
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/half-star.svg" alt="">
+                </li>
+              </ul>
+            </li>
+            <li class="know--wrapper__list__item">
+              <div class="know--wrapper__list__item--prof">
+                <img src="./assets/images/CSS-icon.svg" alt="">
+              </div>
+              <ul class="know--wrapper__list__item--rate__list">
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/half-star.svg" alt="">
+                </li>
+              </ul>
+            </li>
+            <li class="know--wrapper__list__item">
+              <div class="know--wrapper__list__item--prof">
+                <img src="./assets/images/sass-icon.svg" alt="">
+              </div>
+              <ul class="know--wrapper__list__item--rate__list">
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+
+              </ul>
+            </li>
+            <li class="know--wrapper__list__item">
+              <div class="know--wrapper__list__item--prof">
+                <img src="./assets/images/js-icon.svg" alt="">
+              </div>
+              <ul class="know--wrapper__list__item--rate__list">
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/half-star.svg" alt="">
+                </li>
+              </ul>
+            </li>
+            <li class="know--wrapper__list__item">
+              <div class="know--wrapper__list__item--prof">
+                <img src="./assets/images/c-icon.svg" alt="">
+              </div>
+              <ul class="know--wrapper__list__item--rate__list">
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/half-star.svg" alt="">
+                </li>
+              </ul>
+            </li>
+            <li class="know--wrapper__list__item">
+              <div class="know--wrapper__list__item--prof">
+                <img src="./assets/images/figma-icon.svg" alt="">
+              </div>
+              <ul class="know--wrapper__list__item--rate__list">
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/star.svg" alt="">
+                </li>
+                <li class="know--wrapper__list__item--rate__list__item">
+                  <img src="./assets/images/half-star.svg" alt="">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="main-footer--wrapper__logo">
+        <a href="./index.html">
+          <img src="./assets/images/footer-logo.svg" alt="">
+        </a>
+      </div>
+      <ul class="main-footer__list">
+        <li class="main-footer__list__item"><a href=""><img src="./assets/images/github-icon.svg" alt=""></a></li>
+        <li class="main-footer__list__item"><a href=""><img src="./assets/images/telegram-icon.svg" alt=""></a></li>
+        <li class="main-footer__list__item"><a href=""><img src="./assets/images/linkedin-icon.svg" alt=""></a></li>
+        <li class="main-footer__list__item"><a href=""><img src="./assets/images/instagram-icon.svg" alt=""></a></li>
       </ul>
-    </nav>
+
+    </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

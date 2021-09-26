@@ -128,8 +128,8 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   margin: 0 auto;
   padding-top: 50px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-name: main;
           animation-name: main;
 }
@@ -570,8 +570,8 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1024px) {
   .main {
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-name: main;
             animation-name: main;
   }

@@ -325,7 +325,7 @@ input[type="radio"].visually-hidden {
   border-radius: 9px;
   padding: 40px 5px;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 500px;
   margin: 0 auto;
 }
@@ -367,7 +367,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main .projects--wrapper__slider--item {
-  max-width: 500px;
+  max-width: 800px;
   -webkit-animation-name: fade;
           animation-name: fade;
   -webkit-animation-duration: 1s;
@@ -379,7 +379,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.25);
   width: 100%;
-  max-height: 150px;
+  max-height: 200px;
 }
 
 @-webkit-keyframes fade {

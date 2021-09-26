@@ -277,7 +277,7 @@ input[type="radio"].visually-hidden {
 
       width: 100%;
 
-      max-width: 500px;
+      max-width: 600px;
       max-height: 500px;
 
       margin: 0 auto;
@@ -312,7 +312,7 @@ input[type="radio"].visually-hidden {
         }
 
         &--item {
-          max-width: 500px;
+          max-width: 800px;
           animation-name: fade;
           animation-duration: 1s;
           a {
@@ -320,7 +320,7 @@ input[type="radio"].visually-hidden {
               border-radius: 9px;
               box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.25);
               width: 100%;
-              max-height: 150px;
+              max-height: 200px;
             }
           }
         }

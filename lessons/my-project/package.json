@@ -10,9 +10,12 @@
     "type": "git",
     "url": "mtereshyn"
   },
-  "author": "",
+  "keywords": [
+    "gulp-lesson"
+  ],
+  "author": "mtereshyn",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.2"
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }

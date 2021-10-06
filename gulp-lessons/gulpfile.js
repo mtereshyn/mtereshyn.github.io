@@ -3,6 +3,7 @@ const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 
+
 function browsersync() {
   browserSync.init({
     server: {baseDir: 'app/'},
@@ -20,15 +21,16 @@ function scripts() {
   .pipe(concat('app.min.js'))
   .pipe(uglify(''))
   .pipe(dest('app/js/'))
+  .pipe(browserSync.stream())
 } 
 
-function startwatch() {
-  watch(['app/**/*.js', '!app/**/*.min.js'])
 
-  
+
+function startwatch() {
+  watch(['app/**/*.js', '!app/**/*.min.js'], scripts)
 }
 
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 
-exports.default = parallel(scripts, startwatch);
+exports.default = parallel(scripts, browsersync, startwatch);

@@ -7,7 +7,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const sass         = require('gulp-sass')(require('sass'));
 const cleancss     = require('gulp-clean-css')
 
-
 function browsersync() {
   browserSync.init({
     server: {baseDir: 'app/' },
@@ -21,7 +20,7 @@ function styles() {
   .pipe(sass())
   .pipe(concat('app.min.css'))
   .pipe(autoprefixer({ overrideBrowserlist: ['last 10 versions'], grid: true}))
-  .pipe(cleancss)
+  .pipe(cleancss(({ level: {1:{ specialComments: 0}}})))
   .pipe(dest('app/css/'))
 } 
 
@@ -39,10 +38,11 @@ function scripts(){
 
 function startWatch() {
   watch(['app/**/*.js', '!app/**/*.min.js'], scripts)
+  watch(['app/**/*.html']).on('change',browserSync.reload)
 }
 
 exports.browsersync = browsersync;
 exports.scripts     = scripts;
 exports.styles      = styles;
 
-exports.default     = parallel(scripts, browsersync, startWatch);
+exports.default     = parallel(styles, scripts,  browsersync, startWatch);

@@ -1,0 +1,148 @@
+* 
+  padding: 0
+  margin: 0
+
+body
+  padding: 0
+  margin: 0
+
+  font-family: Roboto
+  
+  min-width: 320px
+
+  color: #000
+
+a
+  text-decoration: none
+
+ul
+  list-style: none
+
+button
+  cursor: pointer  
+
+.container
+  width: 100%
+  padding: 0 5%
+  margin: 0 auto
+
+.main-header
+  display: flex
+  padding: 15px 0
+  .container
+    display: flex
+    flex-direction: column
+    gap: 10px
+    align-items: center
+  
+  &__logo 
+    height: 25px
+
+  &__second-logo--link
+    color: #1C1B1B
+    font-weight: 700
+    span 
+      font-weight: 400
+      font-style: italic
+    
+
+.main
+  .shop
+    display: flex
+    background-color: #F0EFEB
+    .container
+      padding-top: 20px
+      padding-bottom: 20px
+      display: flex
+      flex-direction: column
+      gap: 60px
+    &-text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      gap: 30px
+      &__intro
+        font-weight: 700
+        font-size: 60px
+      &__slogan 
+        font-weight: 400
+        font-size: 24px
+      &__button
+        padding: 10px 25px
+        background-color: #000
+        border: inherit
+        font-weight: 300
+        font-size: 17px
+        color: #fff
+        border-radius: 100px
+    &-image 
+      max-width: 500px
+      img 
+        width: 100%
+  .guides
+    display: flex
+
+    margin-bottom: 70px
+    .container 
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 30px
+    &__intro
+      text-align: center
+      font-weight: 700
+      font-size: 36px
+      color: #000
+    &__slogan
+      text-align: center
+      max-width: 400px
+      font-weight: 300
+      font-size: 20px
+      color: #000
+    &__link
+      font-weight: 300
+      font-size: 20px
+      color: #000
+      text-align: center
+  .sellers 
+    display: flex
+
+    margin-bottom: 200px
+    .container
+      display: flex
+      flex-direction: column
+      gap: 50px
+    &__intro
+      text-align: center
+      font-weight: 700
+      font-size: 36px
+      color: #000
+    &__list 
+      list-style: none
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 30px
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      gap: 20px
+      &--image 
+        max-width: 300px
+        img 
+          width: 100%
+      &--intro
+        font-weight: 700
+        font-size: 17px
+        text-align: center
+      &--price
+        font-weight: 300
+        text-align: center
+      &--link
+        font-weight: 700
+        font-size: 17px
+        text-align: center
+        color: #000
+        border-bottom: 3px solid #000
+        border-radius: 3px

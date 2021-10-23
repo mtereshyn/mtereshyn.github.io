@@ -29,7 +29,7 @@ function styles() {
 function scripts(){
   return src([
     'node_modules/jquery/dist/jquery.min.js',
-    'app/js/app.js',
+    'app/js/main.js',
   ])
   .pipe(concat('app.min.js'))
   .pipe(uglify())

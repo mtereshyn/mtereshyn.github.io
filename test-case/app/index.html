@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Hexal/Test-program</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header--wrapper">
+        <div class="main-header--wrapper__logo">
+          <img src="images/main-logo.png" alt="">
+        </div>
+        <div class="main-header--wrapper__toggle">
+          <span class="main-header--wrapper__toggle--span"></span>
+          <span class="main-header--wrapper__toggle--span"></span>
+          <span class="main-header--wrapper__toggle--span"></span>
+        </div>
+      </div>
+      <nav class="main-header-nav main-header-nav--closed">
+        <ul class="main-header-nav__list">
+          <li class="main-header-nav__item"><a href="index.html" class="main-header-nav__item--link--general">
+              Portfolio
+            </a></li>
+          <li class="main-header-nav__item"><a href="#about" class="main-header-nav__item--link">
+              About
+            </a></li>
+          <li class="main-header-nav__item"><a href="#image" class="main-header-nav__item--link ">
+              Blog
+            </a></li>
+          <li class="main-header-nav__item"><a href="#get" class="main-header-nav__item--link">
+              Get it touch
+            </a></li>
+        </ul>
+      </nav>
+      <nav class="main-header-nav--desktop">
+        <ul class="main-header-nav--desktop__list">
+          <li class="main-header-nav--desktop__item"><a href="index.html" class="main-header-nav--desktop__item--link--general">
+            Portfolio
+          </a></li>
+          <li class="main-header-nav--desktop__item"><a href="#about" class="main-header-nav--desktop__item--link">
+            About
+          </a></li>
+        </ul>
+        <div class="main-header-nav--desktop__logo">
+          <a href="index.html">
+            <img src="images/main-logo.png" alt="">
+          </a>
+        </div>
+        <ul class="main-header-nav--desktop__list">
+          <li class="main-header-nav--desktop__item"><a href="#image" class="main-header-nav--desktop__item--link main-header-nav--desktop__item--link--blog">Blog</a></li>
+          <li class="main-header-nav--desktop__item"><a href="#get" class="main-header-nav--desktop__item--link">Get it touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="projects">
+      <a name="image"></a>
+      <div class="container">
+        <ul class="projects__list">
+          <li class="projects__item projects__item--first"><img src="images/1.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/2.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/3.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item projects__item--last"><img src="images/4.png" alt="" class="projects__item--image"></li>
+        </ul>
+        
+        <ul class="projects__list">
+          <li class="projects__item"><img src="images/5.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/6.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/7.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/8.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/9.png" alt="" class="projects__item--image"></li>
+        </ul>
+        <ul class="projects__list">
+          <li class="projects__item projects__item--first"><img src="images/10.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/11.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item"><img src="images/12.png" alt="" class="projects__item--image"></li>
+          <li class="projects__item projects__item--last"><img src="images/13.png" alt="" class="projects__item--image"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="about">
+      <a name="about"></a>
+      <div class="container">
+        <div class="wrapper wrapper--active about-wrapper--first">
+          <div class="about__picture">
+            <img src="images/about.png" alt="" class="about__picture--image">
+          </div>
+          <div class="about__texts">
+            <h2 class="about__texts--intro">
+              Smith Anderson
+            </h2>
+            <p class="about__texts--position">
+              Illustrator & Character Designer
+            </p>
+            <p class="about__texts--slogan">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+            </p>
+            <div class="about__texts--social">
+              <ul class="about__texts--social__list">
+                <li class="about__texts--social__item">
+                  <a href="https://www.facebook.com/" class="about__texts--social__item--link">
+                    <img src="images/about-1.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://twitter.com/?lang=uk" class="about__texts--social__item--link">
+                    <img src="images/about-2.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://mail.google.com/" class="about__texts--social__item--link">
+                    <img src="images/about-3.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.pinterest.ru/" class="about__texts--social__item--link">
+                    <img src="images/about-4.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.linkedin.com/" class="about__texts--social__item--link">
+                    <img src="images/about-5.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://dribbble.com/" class="about__texts--social__item--link">
+                    <img src="images/about-6.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper wrapper--noactive about-wrapper--second">
+          <div class="about__picture">
+            <img src="images/about.png" alt="" class="about__picture--image">
+          </div>
+          <div class="about__texts">
+            <h2 class="about__texts--intro">
+              Alen Smith
+            </h2>
+            <p class="about__texts--position">
+              Designer
+            </p>
+            <p class="about__texts--slogan">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+            </p>
+            <div class="about__texts--social">
+              <ul class="about__texts--social__list">
+                <li class="about__texts--social__item">
+                  <a href="https://www.facebook.com/" class="about__texts--social__item--link">
+                    <img src="images/about-1.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://twitter.com/?lang=uk" class="about__texts--social__item--link">
+                    <img src="images/about-2.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://mail.google.com/" class="about__texts--social__item--link">
+                    <img src="images/about-3.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.pinterest.ru/" class="about__texts--social__item--link">
+                    <img src="images/about-4.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.linkedin.com/" class="about__texts--social__item--link">
+                    <img src="images/about-5.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://dribbble.com/" class="about__texts--social__item--link">
+                    <img src="images/about-6.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper wrapper--noactive about-wrapper--third">
+          <div class="about__picture">
+            <img src="images/about.png" alt="" class="about__picture--image">
+          </div>
+          <div class="about__texts">
+            <h2 class="about__texts--intro">
+              Smith Anderson
+            </h2>
+            <p class="about__texts--position">
+              Illustrator & Character Designer
+            </p>
+            <p class="about__texts--slogan">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+            </p>
+            <div class="about__texts--social">
+              <ul class="about__texts--social__list">
+                <li class="about__texts--social__item">
+                  <a href="https://www.facebook.com/" class="about__texts--social__item--link">
+                    <img src="images/about-1.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://twitter.com/?lang=uk" class="about__texts--social__item--link">
+                    <img src="images/about-2.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://mail.google.com/" class="about__texts--social__item--link">
+                    <img src="images/about-3.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.pinterest.ru/" class="about__texts--social__item--link">
+                    <img src="images/about-4.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.linkedin.com/" class="about__texts--social__item--link">
+                    <img src="images/about-5.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://dribbble.com/" class="about__texts--social__item--link">
+                    <img src="images/about-6.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper wrapper--noactive about-wrapper--foth">
+          <div class="about__picture">
+            <img src="images/about.png" alt="" class="about__picture--image">
+          </div>
+          <div class="about__texts">
+            <h2 class="about__texts--intro">
+              Smith Anderson
+            </h2>
+            <p class="about__texts--position">
+              Illustrator & Character Designer
+            </p>
+            <p class="about__texts--slogan">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente error cum, maxime alias doloremque
+              eligendi odio praesentium aliquam laboriosam voluptatibus obcaecati tenetur deleniti harum officiis
+              aperiam dolorum eum? Delectus, assumenda?
+            </p>
+            <div class="about__texts--social">
+              <ul class="about__texts--social__list">
+                <li class="about__texts--social__item">
+                  <a href="https://www.facebook.com/" class="about__texts--social__item--link">
+                    <img src="images/about-1.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://twitter.com/?lang=uk" class="about__texts--social__item--link">
+                    <img src="images/about-2.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://mail.google.com/" class="about__texts--social__item--link">
+                    <img src="images/about-3.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.pinterest.ru/" class="about__texts--social__item--link">
+                    <img src="images/about-4.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://www.linkedin.com/" class="about__texts--social__item--link">
+                    <img src="images/about-5.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+                <li class="about__texts--social__item">
+                  <a href="https://dribbble.com/" class="about__texts--social__item--link">
+                    <img src="images/about-6.png" alt="" class="about__texts--social__item--link__image">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about__circles">
+          <span class="about__circles--dot first--dot dot--active"></span>
+          <span class="about__circles--dot second--dot dot--noactive"></span>
+          <span class="about__circles--dot third--dot dot--noactive"></span>
+          <span class="about__circles--dot foth--dot dot--noactive"></span>
+        </div>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <div class="wrapper">
+          <div class="review__texts">
+            <h2 class="review__texts--intro">
+              Get In Touch
+            </h2>
+            <a name="get"></a>
+            <p class="review__texts--slogan">
+              In order to get in touch use the contact form below:
+            </p>
+          </div>
+          <div class="review__form">
+            <form action="get" class="review__form--block">
+              <input type="text" name="name" value="Name(Required)" required class="review__form--block__input">
+              <input type="email" name="email" value="Email(Required)" required class="review__form--block__input">
+              <input type="text" name="subject" value="Subject" required class="review__form--block__input">
+              <input type="text" name="message" value="Write your message here..." required
+                class="review__form--block__input--message">
+              <button class="review__form--block__button" type="submit">
+                Send
+              </button>
+            </form>
+            <div class="review__form__texts">
+              <p class="review__form__texts--slogan">
+                <span class="review__form__texts--slogan--span">
+                  Quisque Hendrerit:
+                </span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui animi ipsam doloribus dolorem
+                ipsum est, veritatis possimus alias.
+              </p>
+              <ul class="review__form__texts__list">
+                <li class="review__form__texts__item"><a href="" class="review__form__texts__item--link">
+                    <div class="review__form__texts__item--link__image">
+                      <img src="images/review-1.png" alt="" class="review__form__texts__item--link__map">
+                    </div>
+                    Elm St. 14/05 Lost City
+                  </a>
+                </li>
+                <li class="review__form__texts__item"><a href="tel:35283318535" class="review__form__texts__item--link">
+                    <div class="review__form__texts__item--link__image">
+                      <img src="images/review-2.png" alt=""
+                        class="review__form__texts__item--link__phone">
+                      </div>
+                      + 3528 331 85 35
+                  </a>
+                </li>
+                <li class="review__form__texts__item"><a href="mailto:info@hexalcorp.com" class="review__form__texts__item--link">
+                    <div class="review__form__texts__item--link__image">
+                      <img src="images/review-3.png" alt=""
+                        class="review__form__texts__item--link__mail">
+                      </div>
+                      info@hexalcorp.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <p class="main-footer--copyright">
+        © Copyright 2013 by PSDchat
+      </p>
+    </div>
+  </footer>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

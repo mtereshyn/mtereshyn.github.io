@@ -9,19 +9,19 @@ const cleancss     = require('gulp-clean-css')
 
 function browsersync() {
   browserSync.init({
-    server: {baseDir: 'app/' },
+    server: {baseDir: 'nimble-token/' },
     notify: false,
     online: true
   })
 }
 
 function styles() {
-  return src('app/' + prepro + '/main.' + prepro + '')
+  return src('nimble-token/' + prepro + '/main.' + prepro + '')
   .pipe(eval(prepro)())
   .pipe(sass())
-  .pipe(concat('app.min.css'))
+  .pipe(concat('token.min.css'))
   .pipe(cleancss(({ level: {1:{ specialComments: 0}}})))
-  .pipe(dest('app/css/'))
+  .pipe(dest('nimble-token/css/'))
   .pipe(browserSync.stream())
 } ;
 
@@ -29,18 +29,18 @@ function styles() {
 function scripts(){
   return src([
     'node_modules/jquery/dist/jquery.min.js',
-    'app/js/app.js',
+    'nimble-token/js/token.js',
   ])
-  .pipe(concat('app.min.js'))
+  .pipe(concat('token.min.js'))
   .pipe(uglify())
-  .pipe(dest('app/js/'))
+  .pipe(dest('nimble-token/js/'))
   .pipe(browserSync.stream())
 }
 
 function startWatch() {
-  watch('app/**/*' + prepro + '/**/*', styles)
-  watch(['app/**/*.js', '!app/**/*.min.js'], scripts)
-  watch(['app/**/*.html']).on('change',browserSync.reload)
+  watch('nimble-token/**/*' + prepro + '/**/*', styles)
+  watch(['nimble-token/**/*.js', '!nimble-token/**/*.min.js'], scripts)
+  watch(['nimble-token/**/*.html']).on('change',browserSync.reload)
 }
 
 exports.browsersync = browsersync;

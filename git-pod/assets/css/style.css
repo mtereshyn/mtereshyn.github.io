@@ -104,6 +104,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 170px;
 }
 
+.try .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .try-image img {
   width: 100%;
 }
